@@ -1,0 +1,122 @@
+.business-segments-section {
+  background-color: var(--color-ivory-surface);
+}
+
+.segments-editorial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 860px) {
+  .segments-editorial-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+.segment-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium), border-color var(--transition-medium);
+}
+
+.segment-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(176, 138, 69, 0.4);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.07);
+}
+
+.segment-media-wrap {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+}
+
+.segment-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.segment-card:hover .segment-img {
+  transform: scale(1.05);
+}
+
+.segment-badge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background-color: rgba(23, 23, 23, 0.85);
+  color: var(--color-white);
+  backdrop-filter: blur(8px);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.segment-badge svg {
+  color: var(--color-brass-light);
+}
+
+.segment-body {
+  padding: clamp(1.75rem, 3vw, 2.75rem);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.segment-title {
+  font-size: clamp(1.6rem, 2.2vw, 2.1rem);
+  color: var(--color-charcoal);
+  margin-top: 0.3rem;
+  margin-bottom: 0.85rem;
+}
+
+.segment-copy {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.segment-concepts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.concept-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.825rem;
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-xs);
+  color: var(--color-charcoal-light);
+}
+
+.concept-tag svg {
+  color: var(--color-brass);
+}
+
+.segment-action {
+  margin-top: auto;
+}

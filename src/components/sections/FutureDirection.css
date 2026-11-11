@@ -1,0 +1,100 @@
+.future-direction-section {
+  background-color: var(--color-charcoal-dark);
+}
+
+.future-direction-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto clamp(2.5rem, 4vw, 4rem);
+}
+
+.future-section-title {
+  color: var(--color-white);
+  font-size: clamp(2rem, 3.8vw, 3.5rem);
+  margin-top: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.future-statement-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(1.15rem, 1.8vw, 1.6rem);
+  font-style: italic;
+  color: var(--color-brass-light);
+  line-height: 1.4;
+}
+
+.future-pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .future-pillars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.future-pillar-card {
+  background-color: var(--color-charcoal-surface);
+  border: 1px solid var(--color-border-dark);
+  padding: clamp(2rem, 3vw, 2.75rem);
+  border-radius: var(--radius-xs);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-medium), border-color var(--transition-medium);
+}
+
+.future-pillar-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(176, 138, 69, 0.45);
+}
+
+.future-pillar-icon-wrap {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-xs);
+  background-color: rgba(176, 138, 69, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brass-light);
+  margin-bottom: 1.25rem;
+}
+
+.future-pillar-num {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--color-brass-light);
+  margin-bottom: 0.5rem;
+}
+
+.future-pillar-title {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+}
+
+.future-pillar-desc {
+  font-size: 0.925rem;
+  line-height: 1.65;
+  color: var(--color-text-inverse-muted);
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.future-pillar-bar {
+  height: 2px;
+  width: 32px;
+  background-color: var(--color-border-dark);
+  transition: width var(--transition-fast), background-color var(--transition-fast);
+}
+
+.future-pillar-card:hover .future-pillar-bar {
+  width: 55px;
+  background-color: var(--color-brass-light);
+}

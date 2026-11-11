@@ -1,0 +1,55 @@
+.mobile-action-bar {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 58px;
+  background-color: var(--color-charcoal);
+  border-top: 1px solid var(--color-border-dark);
+  z-index: 900;
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 820px) {
+  .mobile-action-bar {
+    display: none;
+  }
+}
+
+.action-bar-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-right: 1px solid var(--color-border-dark);
+  transition: background-color var(--transition-fast);
+}
+
+.action-bar-btn:last-child {
+  border-right: none;
+}
+
+.action-bar-btn:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.action-bar-whatsapp {
+  color: #25d366;
+}
+
+.action-bar-enquire {
+  background-color: var(--color-brass);
+  color: var(--color-white);
+}
+
+.action-bar-enquire:active {
+  background-color: var(--color-brass-dark);
+}

@@ -1,0 +1,56 @@
+.empty-state-box {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 3vw, 3rem);
+  text-align: center;
+  border-radius: var(--radius-xs);
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.empty-state-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background-color: var(--color-brass);
+}
+
+.empty-state-inner {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.empty-state-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+  color: var(--color-charcoal);
+  letter-spacing: -0.01em;
+}
+
+.empty-state-desc {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state-note {
+  font-size: 0.925rem;
+  color: var(--color-charcoal-light);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.empty-state-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

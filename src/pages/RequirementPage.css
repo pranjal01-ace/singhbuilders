@@ -1,0 +1,165 @@
+.requirement-page {
+  padding-top: var(--header-height);
+}
+
+.requirement-hero {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  padding: clamp(3.5rem, 6vw, 6rem) 0 clamp(2.5rem, 4vw, 4rem);
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.requirement-hero-content {
+  max-width: 820px;
+}
+
+.requirement-hero-title {
+  color: var(--color-white);
+  font-size: clamp(2.4rem, 4.8vw, 4.4rem);
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.requirement-hero-subtitle {
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  line-height: 1.65;
+  color: rgba(247, 244, 238, 0.85);
+}
+
+.requirement-body-section {
+  background-color: var(--color-ivory);
+}
+
+.requirement-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 980px) {
+  .requirement-layout-grid {
+    grid-template-columns: 1.6fr 1fr;
+  }
+}
+
+.requirement-sidebar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.req-process-box {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  border-radius: var(--radius-xs);
+}
+
+.process-box-title {
+  font-size: 1.45rem;
+  color: var(--color-charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.process-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.p-step-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.p-step-num {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-brass);
+  line-height: 1.2;
+}
+
+.p-step-title {
+  font-size: 1.05rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.25rem;
+}
+
+.p-step-desc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.process-assurance {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border-subtle);
+  font-size: 0.825rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+.assurance-icon {
+  color: var(--color-brass);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.req-urgent-box {
+  background-color: var(--color-charcoal-surface);
+  border: 1px solid var(--color-border-dark);
+  color: var(--color-white);
+  padding: 1.75rem;
+  border-radius: var(--radius-xs);
+}
+
+.urgent-title {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+}
+
+.urgent-desc {
+  font-size: 0.875rem;
+  color: var(--color-text-inverse-muted);
+  margin-bottom: 1.25rem;
+}
+
+.urgent-phone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.urgent-phone-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-xs);
+  color: var(--color-white);
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.urgent-phone-btn:hover {
+  background-color: var(--color-brass);
+  border-color: var(--color-brass);
+  color: var(--color-white);
+}
+
+.urgent-phone-btn svg {
+  color: var(--color-brass-light);
+}
+
+.urgent-phone-btn:hover svg {
+  color: var(--color-white);
+}

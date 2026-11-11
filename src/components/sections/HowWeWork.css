@@ -1,0 +1,169 @@
+.how-we-work-section {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-charcoal);
+}
+
+.how-we-work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 640px) {
+  .how-we-work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1040px) {
+  .how-we-work-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.work-step-card {
+  position: relative;
+  background-color: var(--color-charcoal-surface);
+  border: 1px solid var(--color-border-dark);
+  padding: 2.25rem 2rem;
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-medium), border-color var(--transition-medium);
+}
+
+.work-step-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(176, 138, 69, 0.45);
+}
+
+.step-watermark {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.25rem;
+  font-family: var(--font-serif);
+  font-size: 5rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.035);
+  line-height: 1;
+  pointer-events: none;
+  transition: color var(--transition-fast);
+}
+
+.work-step-card:hover .step-watermark {
+  color: rgba(176, 138, 69, 0.08);
+}
+
+.step-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-xs);
+  background-color: rgba(176, 138, 69, 0.15);
+  border: 1px solid rgba(176, 138, 69, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brass-light);
+}
+
+.step-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: var(--color-brass-light);
+}
+
+.step-card-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+}
+
+.step-card-summary {
+  font-size: 0.975rem;
+  line-height: 1.6;
+  color: var(--color-ivory);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.step-card-detail {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-inverse-muted);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.step-card-indicator {
+  height: 2px;
+  width: 32px;
+  background-color: var(--color-border-dark);
+  transition: width var(--transition-medium), background-color var(--transition-medium);
+  margin-top: auto;
+}
+
+.work-step-card:hover .step-card-indicator {
+  width: 64px;
+  background-color: var(--color-brass-light);
+}
+
+/* Central Axiom Banner */
+.how-we-work-banner {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-xs);
+  padding: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.axiom-badge {
+  display: inline-block;
+  font-size: 0.725rem;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: var(--color-brass-light);
+  margin-bottom: 1rem;
+}
+
+.axiom-equation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  color: var(--color-white);
+  margin-bottom: 1.25rem;
+}
+
+.equation-plus {
+  color: var(--color-brass-light);
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
+
+.axiom-subtext {
+  font-size: 0.95rem;
+  color: var(--color-text-inverse-muted);
+  max-width: 720px;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.7;
+}

@@ -1,0 +1,71 @@
+.home-page {
+  position: relative;
+}
+
+.home-requirement-section {
+  background-color: var(--color-ivory);
+}
+
+.home-contact-strip {
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: clamp(2rem, 3.5vw, 3rem) 0;
+}
+
+.contact-strip-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 680px) {
+  .contact-strip-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.strip-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.strip-icon {
+  color: var(--color-brass);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.strip-label {
+  display: block;
+  font-size: 0.725rem;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.strip-phone-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.strip-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-charcoal);
+  transition: color var(--transition-fast);
+}
+
+.strip-link:hover {
+  color: var(--color-brass);
+}
+
+.strip-text {
+  font-size: 0.95rem;
+  color: var(--color-charcoal);
+  font-weight: 500;
+}

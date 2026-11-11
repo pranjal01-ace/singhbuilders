@@ -1,0 +1,111 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.form-label {
+  font-family: var(--font-sans);
+  font-size: 0.825rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-light);
+  margin-bottom: 0.45rem;
+}
+
+.required-star {
+  color: #c94a29;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  font-family: var(--font-sans);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  color: var(--color-charcoal);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  appearance: none;
+}
+
+.form-control::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-brass);
+  box-shadow: 0 0 0 3px rgba(176, 138, 69, 0.15);
+}
+
+.form-control:disabled {
+  background-color: var(--color-ivory-surface);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-right: 1.5px solid var(--color-charcoal-light);
+  border-bottom: 1.5px solid var(--color-charcoal-light);
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+
+.form-field.has-error .form-control {
+  border-color: #d33828;
+}
+
+.field-message {
+  font-size: 0.8rem;
+  margin-top: 0.35rem;
+  display: block;
+}
+
+.error-message {
+  color: #c94a29;
+}
+
+.helper-message {
+  color: var(--color-text-muted);
+}
+
+/* Dark theme form fields */
+.form-field-dark .form-label {
+  color: var(--color-text-inverse-muted);
+}
+
+.form-field-dark .form-control {
+  background-color: var(--color-charcoal-surface);
+  border-color: var(--color-border-dark);
+  color: var(--color-text-inverse);
+}
+
+.form-field-dark .form-control:focus {
+  border-color: var(--color-brass-light);
+  box-shadow: 0 0 0 3px rgba(176, 138, 69, 0.25);
+}
+
+.form-field-dark .select-wrapper::after {
+  border-color: var(--color-text-inverse-muted);
+}

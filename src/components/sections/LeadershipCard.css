@@ -1,0 +1,66 @@
+.leadership-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-medium), border-color var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.leadership-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(176, 138, 69, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+}
+
+.leadership-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brass);
+  margin-bottom: 1.5rem;
+}
+
+.leadership-role-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-brass-dark);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.leadership-name {
+  font-size: 1.45rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.leadership-note {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  flex-grow: 1;
+}
+
+.leadership-card-line {
+  height: 2px;
+  width: 32px;
+  background-color: var(--color-border);
+  margin-top: 1.75rem;
+  transition: width var(--transition-medium), background-color var(--transition-medium);
+}
+
+.leadership-card:hover .leadership-card-line {
+  width: 60px;
+  background-color: var(--color-brass);
+}

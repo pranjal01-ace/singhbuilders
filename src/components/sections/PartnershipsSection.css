@@ -1,0 +1,106 @@
+.partnerships-section {
+  background-color: var(--color-ivory-surface);
+}
+
+.partnerships-header-wrap {
+  margin-bottom: 2rem;
+}
+
+.partnerships-categories-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 640px) {
+  .partnerships-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1040px) {
+  .partnerships-categories-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.partnership-box {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  padding: 2.25rem 1.75rem;
+  border-radius: var(--radius-xs);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-medium), border-color var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.partnership-box:hover {
+  transform: translateY(-4px);
+  border-color: rgba(176, 138, 69, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+}
+
+.partnership-icon-wrap {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-brass);
+  margin-bottom: 1.5rem;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.partnership-box:hover .partnership-icon-wrap {
+  background-color: var(--color-charcoal);
+  border-color: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.partnership-title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.partnership-question {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-charcoal);
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+}
+
+.partnership-detail {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.partnership-box-accent {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-border);
+  transition: width var(--transition-medium), background-color var(--transition-medium);
+}
+
+.partnership-box:hover .partnership-box-accent {
+  width: 50px;
+  background-color: var(--color-brass);
+}
+
+.partnerships-cta-row {
+  display: flex;
+  justify-content: center;
+}

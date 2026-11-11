@@ -1,0 +1,173 @@
+.requirement-form-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border-radius: var(--radius-xs);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
+}
+
+.req-form-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: 1.25rem;
+}
+
+.req-form-title {
+  font-size: clamp(1.6rem, 2.5vw, 2.3rem);
+  color: var(--color-charcoal);
+  margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.req-form-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+.form-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-xs);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.form-alert-error {
+  background-color: #fdf2f2;
+  border: 1px solid #f8b4b4;
+  color: #9b1c1c;
+}
+
+.req-field-group {
+  margin-bottom: 1.5rem;
+}
+
+.interest-type-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.interest-pill {
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-border);
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  color: var(--color-charcoal-light);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.interest-pill:hover {
+  border-color: var(--color-brass);
+}
+
+.interest-pill.selected {
+  background-color: var(--color-charcoal);
+  border-color: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.req-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .req-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.req-form-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+@media (min-width: 768px) {
+  .req-form-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.privacy-reassurance {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.825rem;
+  color: var(--color-text-secondary);
+}
+
+.privacy-reassurance svg {
+  color: var(--color-brass);
+  flex-shrink: 0;
+}
+
+.req-submit-btn {
+  min-width: 220px;
+}
+
+/* Success State Presentation */
+.requirement-success-state {
+  text-align: center;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.success-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(176, 138, 69, 0.12);
+  margin-bottom: 1.5rem;
+}
+
+.success-icon {
+  color: var(--color-brass);
+}
+
+.success-title {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  color: var(--color-charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.success-headline {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--color-brass-dark);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.success-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 580px;
+  margin: 0 auto 2.5rem;
+}
+
+.success-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
