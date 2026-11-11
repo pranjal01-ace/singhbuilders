@@ -23,11 +23,6 @@ export const siteConfig = {
       name: "Mr. Varun Singh",
       role: "Current Business Leadership",
       note: "Leading strategic expansion, developer relationships, and requirement-driven discovery."
-    },
-    {
-      name: "Mr. Aman Kumar",
-      role: "Current Business Leadership",
-      note: "Overseeing key commercial opportunities, operational excellence, and partner collaborations."
     }
   ],
 

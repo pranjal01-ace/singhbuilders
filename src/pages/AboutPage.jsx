@@ -25,7 +25,7 @@ const journeyMilestones = [
     phase: "03",
     year: "2018 – Present",
     title: "Present Leadership",
-    description: "Advancing into modern residential floors, commercial investment spaces, and strategic developer collaborations under Mr. Varun Singh and Mr. Aman Kumar."
+    description: "Advancing into modern residential floors, commercial investment spaces, and strategic developer collaborations under Mr. Varun Singh."
   },
   {
     phase: "04",
@@ -58,27 +58,31 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Our Beginning Section */}
+      {/* Our Foundation & Philosophy Section */}
       <section className="section-pad about-beginning-section">
         <Container>
           <div className="about-beginning-grid">
             <div className="beginning-text-col">
               <SectionHeading
-                label="OUR BEGINNING"
-                title="Rooted in Principles, Shaped by Real Relationships"
+                label="OUR FOUNDATION & PHILOSOPHY"
+                title="Built on Trust, Guided by Purpose"
               />
               <p className="beginning-lead">
-                Singh Builder's was established on 7 July 2007 under the leadership of Mr. Dildar Singh.
+                Rooted in the heart of South Delhi, Singh Builders was founded with a clear vision:
+                to redefine real estate through trust, transparency, and a client-first approach.
+                From the very beginning, our philosophy has been simple: properties are never just
+                commodities; every client's requirement is a responsibility we uphold with utmost
+                dedication.
               </p>
               <p className="beginning-body">
-                From our foundational base in South Delhi, our mission was defined clearly from day one:
-                never treat properties as generic commodities, but treat every client requirement as a
-                sacred mandate.
+                Guided by uncompromising integrity, transparent property evaluations, and consistent
+                communication, we have built relationships that extend beyond transactions. Our
+                commitment to excellence has enabled us to cultivate lasting, generational relationships
+                across both residential and commercial real estate.
               </p>
               <p className="beginning-body">
-                By maintaining uncompromising integrity, transparent evaluation, and continuous
-                communication, the company has fostered generational relationships across residential
-                and commercial sectors.
+                At Singh Builders, we don't just build spaces or facilitate investments, we build trust,
+                create opportunities, and establish relationships that stand the test of time.
               </p>
 
               <div className="beginning-features">
