@@ -211,7 +211,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
 }
 

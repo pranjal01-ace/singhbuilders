@@ -5,8 +5,10 @@
   padding: 2.25rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
+  height: 100%;
   transition: transform var(--transition-medium), border-color var(--transition-medium), box-shadow var(--transition-medium);
 }
 
@@ -14,6 +16,77 @@
   transform: translateY(-4px);
   border-color: rgba(176, 138, 69, 0.4);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+}
+
+.leadership-card-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex-grow: 1;
+}
+
+/* Card with photo layout */
+.leadership-card.has-photo .leadership-card-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 540px) {
+  .leadership-card.has-photo .leadership-card-main {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 539px) {
+  .leadership-card {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .leadership-photo-frame {
+    width: 104px;
+    height: 104px;
+  }
+
+  .leadership-card.has-photo .leadership-card-main {
+    gap: 1.25rem;
+  }
+}
+
+.leadership-photo-wrap {
+  flex-shrink: 0;
+}
+
+.leadership-photo-frame {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-ivory);
+  border: 2px solid var(--color-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07), 0 0 0 3px var(--color-ivory);
+  transition: border-color var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.leadership-card:hover .leadership-photo-frame {
+  border-color: var(--color-brass);
+  box-shadow: 0 12px 28px rgba(176, 138, 69, 0.18), 0 0 0 3px var(--color-ivory);
+}
+
+.leadership-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 58% 18%;
+  display: block;
+  transition: transform var(--transition-medium);
+}
+
+.leadership-card:hover .leadership-photo {
+  transform: scale(1.06);
 }
 
 .leadership-icon-wrap {
@@ -26,7 +99,14 @@
   align-items: center;
   justify-content: center;
   color: var(--color-brass);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.leadership-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .leadership-role-tag {

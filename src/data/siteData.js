@@ -17,12 +17,18 @@ export const siteConfig = {
     {
       name: "Mr. Dildar Singh",
       role: "Founder / Foundation",
-      note: "Established Singh Builder's on 7 July 2007, defining our bedrock principle of relationship-led trust."
+      note: "Established Singh Builder's on 7 July 2007, defining our bedrock principle of relationship-led trust.",
+      image: "/assets/images/Mr. Dildar Singh.jpeg",
+      imageAlt: "Mr. Dildar Singh - Founder of Singh Builders",
+      imagePosition: "58% 18%"
     },
     {
       name: "Mr. Varun Singh",
       role: "Current Business Leadership",
-      note: "Leading strategic expansion, developer relationships, and requirement-driven discovery."
+      note: "Leading strategic expansion, developer relationships, and requirement-driven discovery.",
+      image: "/assets/images/Mr. Varun Singh.jpeg",
+      imageAlt: "Mr. Varun Singh - Current Business Leadership at Singh Builders",
+      imagePosition: "56% 26%"
     }
   ],
 
